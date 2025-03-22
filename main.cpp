@@ -8,7 +8,7 @@ int main()
     std::set<Deposit> st;
     std::unordered_set<Deposit, DepositHasher> unst;
     
-    std::ifstream in("../Term-2/Labs/Lab5/input.txt");
+    std::ifstream in("input.txt");
     for (int i = 0; i < 3; i++)
     {
         std::string lbl, cur;
@@ -21,7 +21,7 @@ int main()
     }
     in.close();
 
-    std::ofstream out("../Term-2/Labs/Lab5/output.txt");
+    std::ofstream out("output.txt");
     for (auto &pos : unst)
     {
         out << pos.getLabel() << " " << pos.getValue() << " "
